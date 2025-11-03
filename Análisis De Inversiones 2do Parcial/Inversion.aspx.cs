@@ -11,12 +11,20 @@ namespace Análisis_De_Inversiones_2do_Parcial
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack) 
+            {
+                ValidationSettings.UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
+            }
         }
 
         protected void btnTAP_Click(object sender, EventArgs e)
         {
             TAP_1.Visible = true; TAP_2.Visible = true; TAP_3.Visible = true;
+        }
+
+        protected void txtH1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
