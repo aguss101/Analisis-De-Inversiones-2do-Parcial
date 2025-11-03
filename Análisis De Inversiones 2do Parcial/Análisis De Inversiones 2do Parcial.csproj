@@ -67,16 +67,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="11.aspx" />
+    <Content Include="Inversion.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="11.aspx.cs">
-      <DependentUpon>11.aspx</DependentUpon>
+    <Compile Include="Inversion.aspx.cs">
+      <DependentUpon>Inversion.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="11.aspx.designer.cs">
-      <DependentUpon>11.aspx</DependentUpon>
+    <Compile Include="Inversion.aspx.designer.cs">
+      <DependentUpon>Inversion.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
