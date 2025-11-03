@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace Análisis_De_Inversiones_2do_Parcial
 {
@@ -11,22 +7,45 @@ namespace Análisis_De_Inversiones_2do_Parcial
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack) 
+            if (!IsPostBack)
             {
                 ValidationSettings.UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
             }
         }
+        protected void txtP1_TextChanged(object sender, EventArgs e)
+        {
+        }
 
         protected void btnTAP_Click(object sender, EventArgs e)
         {
-            TAP_1.Visible = true; TAP_2.Visible = true; TAP_3.Visible = true;
-            //double txtP1 = Convert.ToDouble(txtP1.Text);
-            //Promedio = TAP_1.Text
-        }
+            TAP_1.Visible = true;
+            TAP_2.Visible = true;
+            TAP_3.Visible = true;
 
-        protected void txtP1_TextChanged(object sender, EventArgs e)
-        {
+            try
+            {
+                double p1 = Convert.ToDouble(txtP1.Text);
+                double p2 = Convert.ToDouble(txtP2.Text);
+                double p3 = Convert.ToDouble(txtP3.Text);
+                double promP = (p1 + p2 + p3) / 3;
+                TAP_1.Text = promP.ToString("0.00") + " %";
 
+                double n1 = Convert.ToDouble(txtN1.Text);
+                double n2 = Convert.ToDouble(txtN2.Text);
+                double n3 = Convert.ToDouble(txtN3.Text);
+                double promN = (n1 + n2 + n3) / 3;
+                TAP_2.Text = promN.ToString("0.00") + " %";
+
+                double h1 = Convert.ToDouble(txtH1.Text);
+                double h2 = Convert.ToDouble(txtH2.Text);
+                double h3 = Convert.ToDouble(txtH3.Text);
+                double promH = (h1 + h2 + h3) / 3;
+                TAP_3.Text = promH.ToString("0.00") + " %";
+            }
+            catch (FormatException)
+            {
+                Response.Write("<script>alert('Por favor, ingrese solo números válidos en todas las tasas.');</script>");
+            }
         }
     }
 }

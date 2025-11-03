@@ -222,6 +222,15 @@ namespace Análisis_De_Inversiones_2do_Parcial
         protected global::System.Web.UI.WebControls.Button btnTAP;
 
         /// <summary>
+        /// Control btnLimpiar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnLimpiar;
+
+        /// <summary>
         /// Control lblBetterInvestment.
         /// </summary>
         /// <remarks>

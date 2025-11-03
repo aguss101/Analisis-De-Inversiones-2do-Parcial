@@ -49,7 +49,7 @@
     <form id="form1" runat="server">
         <table class="auto-style1">
             <tr>
-                <td class="auto-style3">
+                <td class="auto-style3" colspan="2">
                     <asp:Label ID="lblMejor" runat="server" Font-Overline="True" Font-Strikeout="False" Font-Underline="True" Text="Mejor opcion de inversión"></asp:Label>
                 </td>
                 <td>&nbsp;</td>
@@ -68,7 +68,7 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style3">&nbsp;</td>
+                <td class="auto-style3" colspan="2">&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td class="auto-style5">&nbsp;</td>
@@ -85,7 +85,7 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style13">
+                <td class="auto-style13" colspan="2">
                     <asp:Label ID="lblName1" runat="server" Text="Banco Provincia"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TA 1:&nbsp;
                     <asp:TextBox ID="txtP1" runat="server" ValidationGroup="1" OnTextChanged="txtP1_TextChanged"></asp:TextBox>
@@ -113,7 +113,7 @@
                 <td class="auto-style14"></td>
             </tr>
             <tr>
-                <td class="auto-style3">
+                <td class="auto-style3" colspan="2">
                     <asp:Label ID="lblName2" runat="server" Text="Banco Nación"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TA 1:&nbsp;
                     <asp:TextBox ID="txtN1" runat="server" ValidationGroup="1"></asp:TextBox>
@@ -141,7 +141,7 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style3">
+                <td class="auto-style3" colspan="2">
                     <asp:Label ID="lblName3" runat="server" Text="Banco Hipotecario"></asp:Label>
 &nbsp;&nbsp;&nbsp; TA 1:&nbsp;
                     <asp:TextBox ID="txtH1" runat="server" ValidationGroup="1"></asp:TextBox>
@@ -169,7 +169,7 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style3">&nbsp;</td>
+                <td class="auto-style3" colspan="2">&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td class="auto-style5">&nbsp;</td>
@@ -189,6 +189,9 @@
                 <td class="auto-style3">
                     <asp:Button ID="btnTAP" runat="server" OnClick="btnTAP_Click" Text="Mostrar Promedio" ValidationGroup="1" />
                 </td>
+                <td class="auto-style3">
+                    <asp:Button ID="btnLimpiar" runat="server" OnClick="btnTAP_Click" Text="Limpiar Celdas" ValidationGroup="1" />
+                </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td class="auto-style5">&nbsp;</td>
@@ -205,7 +208,7 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style3">
+                <td class="auto-style3" colspan="2">
                     <asp:Label ID="lblBetterInvestment" runat="server" Font-Bold="True" Font-Overline="True" Font-Size="X-Large" Font-Underline="True" Text="Mejor inversión"></asp:Label>
                 </td>
                 <td>
@@ -226,7 +229,7 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style3">Banco:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Label ID="lblBco" runat="server" Text="lblBanco"></asp:Label>
+                <td class="auto-style3" colspan="2">Banco:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Label ID="lblBco" runat="server" Text="lblBanco"></asp:Label>
                 </td>
                 <td>
                     <asp:Label ID="lblName2_P" runat="server" Font-Bold="True" Text="Banco Provincia"></asp:Label>
@@ -252,7 +255,7 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style10">Tasa Anual:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <td class="auto-style10" colspan="2">Tasa Anual:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:Label ID="lblT_Anual" runat="server"></asp:Label>
                 </td>
                 <td class="auto-style11"></td>
@@ -279,7 +282,7 @@
                 <td class="auto-style11"></td>
             </tr>
             <tr>
-                <td>Tasa Trimestral:&nbsp;&nbsp;&nbsp;
+                <td colspan="2">Tasa Trimestral:&nbsp;&nbsp;&nbsp;
                     <asp:Label ID="lblT_Trimestral" runat="server"></asp:Label>
                 </td>
                 <td>&nbsp;</td>
@@ -297,7 +300,7 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style3">Tasa Mensual:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <td class="auto-style3" colspan="2">Tasa Mensual:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:Label ID="lblT_Mensual" runat="server"></asp:Label>
                 </td>
                 <td>
@@ -324,7 +327,7 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style3">&nbsp;</td>
+                <td class="auto-style3" colspan="2">&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>$850.000</td>
                 <td class="auto-style5">
@@ -349,7 +352,7 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style3">&nbsp;</td>
+                <td class="auto-style3" colspan="2">&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td class="auto-style5">&nbsp;</td>
@@ -366,7 +369,7 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style7"></td>
+                <td class="auto-style7" colspan="2"></td>
                 <td class="auto-style8">
                     <asp:Label ID="lblName2_H" runat="server" Font-Bold="True" Text="Banco Hipotecario"></asp:Label>
                 </td>
@@ -391,7 +394,7 @@
                 <td class="auto-style8"></td>
             </tr>
             <tr>
-                <td class="auto-style3">&nbsp;</td>
+                <td class="auto-style3" colspan="2">&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>$850.000</td>
                 <td class="auto-style5">
@@ -416,7 +419,7 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style3">&nbsp;</td>
+                <td class="auto-style3" colspan="2">&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td class="auto-style5">&nbsp;</td>
