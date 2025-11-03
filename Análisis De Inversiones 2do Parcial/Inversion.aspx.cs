@@ -23,5 +23,10 @@ namespace Análisis_De_Inversiones_2do_Parcial
             //double txtP1 = Convert.ToDouble(txtP1.Text);
             //Promedio = TAP_1.Text
         }
+
+        protected void txtP1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -88,7 +88,7 @@
                 <td class="auto-style13">
                     <asp:Label ID="lblName1" runat="server" Text="Banco Provincia"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TA 1:&nbsp;
-                    <asp:TextBox ID="txtP1" runat="server" ValidationGroup="1"></asp:TextBox>
+                    <asp:TextBox ID="txtP1" runat="server" ValidationGroup="1" OnTextChanged="txtP1_TextChanged"></asp:TextBox>
                     TA 2:
                     <asp:TextBox ID="txtP2" runat="server" style="height: 22px" ValidationGroup="1"></asp:TextBox>
 &nbsp; TA 3:<asp:TextBox ID="txtP3" runat="server" ValidationGroup="1"></asp:TextBox>
