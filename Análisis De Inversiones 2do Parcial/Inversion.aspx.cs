@@ -20,11 +20,8 @@ namespace Análisis_De_Inversiones_2do_Parcial
         protected void btnTAP_Click(object sender, EventArgs e)
         {
             TAP_1.Visible = true; TAP_2.Visible = true; TAP_3.Visible = true;
-        }
-
-        protected void txtH1_TextChanged(object sender, EventArgs e)
-        {
-
+            //double txtP1 = Convert.ToDouble(txtP1.Text);
+            //Promedio = TAP_1.Text
         }
     }
 }

@@ -90,7 +90,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TA 1:&nbsp;
                     <asp:TextBox ID="txtP1" runat="server" ValidationGroup="1"></asp:TextBox>
                     TA 2:
-                    <asp:TextBox ID="txtP2" runat="server" ValidationGroup="1"></asp:TextBox>
+                    <asp:TextBox ID="txtP2" runat="server" style="height: 22px" ValidationGroup="1"></asp:TextBox>
 &nbsp; TA 3:<asp:TextBox ID="txtP3" runat="server" ValidationGroup="1"></asp:TextBox>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:Label ID="lbltap1" runat="server" Text="TAP" Visible="False"></asp:Label>
@@ -128,7 +128,7 @@
                 </td>
                 <td>&nbsp;</td>
                 <td class="auto-style5" colspan="3">
-                    <asp:RegularExpressionValidator ID="re" runat="server" ControlToValidate="txtN1" ErrorMessage="Ingrese solo numericos" ValidationExpression="^\d+(\.\d+)?$" ValidationGroup="1"></asp:RegularExpressionValidator>
+                    <asp:RegularExpressionValidator ID="re" runat="server" ControlToValidate="txtN1" ErrorMessage="Ingrese solo numericos" ForeColor="#CC0000" ValidationExpression="^\d+(\.\d+)?$" ValidationGroup="1"></asp:RegularExpressionValidator>
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -144,7 +144,7 @@
                 <td class="auto-style3">
                     <asp:Label ID="lblName3" runat="server" Text="Banco Hipotecario"></asp:Label>
 &nbsp;&nbsp;&nbsp; TA 1:&nbsp;
-                    <asp:TextBox ID="txtH1" runat="server" OnTextChanged="txtH1_TextChanged" ValidationGroup="1"></asp:TextBox>
+                    <asp:TextBox ID="txtH1" runat="server" ValidationGroup="1"></asp:TextBox>
                     TA 2:
                     <asp:TextBox ID="txtH2" runat="server" ValidationGroup="1"></asp:TextBox>
 &nbsp; TA 3:<asp:TextBox ID="txtH3" runat="server" ValidationGroup="1"></asp:TextBox>
