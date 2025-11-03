@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.36105.23 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Análisis De Inversiones 2do Parcial", "Análisis De Inversiones 2do Parcial.csproj", "{A6766D1B-2193-4A48-97F3-03D7CE13967F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6766D1B-2193-4A48-97F3-03D7CE13967F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6766D1B-2193-4A48-97F3-03D7CE13967F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6766D1B-2193-4A48-97F3-03D7CE13967F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6766D1B-2193-4A48-97F3-03D7CE13967F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {411132B8-0B3C-40BD-84FE-4038D64174D6}
+	EndGlobalSection
+EndGlobal
