@@ -300,6 +300,18 @@ asp\:Label {
 
 }
 
+@media screen and ( max-width: 622px ) {
+
+    .Title__Container{
+        background-color: #fff;
+    }
+
+    #form1{
+        padding: 0 !important; 
+    }
+
+}
+
 @media screen and ( max-width: 460px ) {
     .Submits{
         display: flex;
@@ -313,5 +325,12 @@ asp\:Label {
     #btnTAP{
         margin: 0;
     }
-    
+
 }
+
+@media screen and ( max-width: 460px ) {
+    body{
+        padding: 0;
+    }
+}
+
