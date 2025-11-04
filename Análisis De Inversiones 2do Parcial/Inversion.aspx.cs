@@ -53,7 +53,12 @@ namespace Análisis_De_Inversiones_2do_Parcial
             }
             catch (FormatException)
             {
-                Response.Write("<script>alert('Por favor, ingrese solo números válidos en todas las tasas.');</script>");
+                ClientScript.RegisterStartupScript(
+                    this.GetType(),
+                    "alert",
+                    "alert('Por favor, ingrese solo números válidos en todas las tasas.');",
+                    true
+                );
             }
         }
 

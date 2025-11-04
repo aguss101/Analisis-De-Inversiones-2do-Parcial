@@ -39,6 +39,7 @@
                         <asp:TextBox ID="txtP3" runat="server" ValidationGroup="1" Class="Bank__Input-Modify"></asp:TextBox>
                     </label>
                 </div>
+                <asp:Label ID="TAP_1" runat="server" Visible="False" class="Bank__TAP"></asp:Label>
             </div>
 
             <div class="Bank__Container">
@@ -54,6 +55,7 @@
                         <asp:TextBox ID="txtN3" runat="server" ValidationGroup="1" Class="Bank__Input-Modify"></asp:TextBox>
                     </label>
                 </div>
+                <asp:Label ID="TAP_2" runat="server" class="Bank__TAP"></asp:Label>
             </div>
 
             <div class="Bank__Container">
@@ -68,32 +70,133 @@
                     <label>TA 3
                         <asp:TextBox ID="txtH3" runat="server" ValidationGroup="1" Class="Bank__Input-Modify"></asp:TextBox>
                     </label>
-                </div>
+                </div> 
+                <asp:Label ID="TAP_3" runat="server" Visible="False" class="Bank__TAP"></asp:Label>
             </div>
 
         </div>
 
+        <div class="Errores">
+            <asp:RequiredFieldValidator ID="RFVtxt" runat="server" ControlToValidate="txtH3" ErrorMessage="Ingrese todos los datos" ForeColor="Red" ValidationGroup="1"></asp:RequiredFieldValidator>
+        </div>
+
         <div class="Submits">
-             <!-- OnClick="btnTAP_Click" --> <asp:Button ID="btnTAP" runat="server" Text="Mostrar Promedio" ValidationGroup="1" />
-            <!-- OnClick="btnLimpiar_Click" --> <asp:Button ID="btnLimpiar" runat="server" Text="Limpiar Celdas" ValidationGroup="1" />
+             <!--  --> <asp:Button ID="btnTAP" runat="server" Text="Mostrar Promedio" ValidationGroup="1" OnClick="btnTAP_Click" />
+            <!--  --> <asp:Button ID="btnLimpiar" runat="server" Text="Limpiar Celdas" ValidationGroup="2" OnClick="btnLimpiar_Click" />
         </div>
 
         <!-- ---------- Invertir END ---------- -->
 
+        <!-- ---------- Result ---------- -->
+
         <div class="Result__Container">
+
+            <div class="Performance">
+
+                <h2>Rendimientos</h2>
+
+                <!-- Banco Provincia -->
+
+                <div class="Performance__Container">
+                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Banco Provincia</th>
+                                <th>Capital</th>
+                                <th>TAP</th>
+                                <th>Anual</th>
+                                <th>Trimestral</th>
+                                <th>Mensual</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td> <span>$850.000</span> </td>
+                                <td> <asp:Label ID="lblTAPS" runat="server"></asp:Label> </td>
+                                <td> <asp:Label ID="lblAS" runat="server"></asp:Label> </td>
+                                <td> <asp:Label ID="lblTS" runat="server"></asp:Label> </td>
+                                <td> <asp:Label ID="lblMS" runat="server"></asp:Label> </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <!-- Banco Nación -->
+
+                <div class="Performance__Container">
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Banco Nación</th>
+                                <th>Capital</th>
+                                <th>TAP</th>
+                                <th>Anual</th>
+                                <th>Trimestral</th>
+                                <th>Mensual</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td> <span>$850.000</span> </td>
+                                <td> <asp:Label ID="lblTAPS2" runat="server"></asp:Label> </td>
+                                <td> <asp:Label ID="lblAS2" runat="server"></asp:Label> </td>
+                                <td> <asp:Label ID="lblTS2" runat="server"></asp:Label> </td>
+                                <td> <asp:Label ID="lblMS2" runat="server"></asp:Label> </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <!-- Banco Hipotecario -->
+
+                <div class="Performance__Container">
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Banco Hipotecario</th>
+                                <th>Capital</th>
+                                <th>TAP</th>
+                                <th>Anual</th>
+                                <th>Trimestral</th>
+                                <th>Mensual</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td> <span>$850.000</span> </td>
+                                <td> <asp:Label ID="lblTAPS3" runat="server"></asp:Label> </td>
+                                <td> <asp:Label ID="lblAS3" runat="server"></asp:Label> </td>
+                                <td> <asp:Label ID="lblTS3" runat="server"></asp:Label> </td>
+                                <td> <asp:Label ID="lblMS3" runat="server"></asp:Label> </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+            </div>
 
             <div class="Result__Best">
 
                 <h2>Mejor Inversión</h2>
                 <div class="Result__Bank-Container">
-                    <p>Banco : </p> <asp:Label ID="lblBco" runat="server" Text="lblBanco"></asp:Label>
+                    <p>Banco : <asp:Label ID="lblBco" runat="server" Text="lblBanco"></asp:Label> </p> 
+                    <p>Tasa Anual : <asp:Label ID="lblT_Anual" runat="server"></asp:Label> </p>
+                    <p>Tasa Trimestral : <asp:Label ID="lblT_Trimestral" runat="server"></asp:Label> </p>
+                    <p>Tasa Mensual : <asp:Label ID="lblT_Mensual" runat="server"></asp:Label> </p>
                 </div>
 
             </div>
 
-            <div class="Performance">
-
-            </div>
+            <!-- ---------- Result END ---------- -->
 
         </div>
 

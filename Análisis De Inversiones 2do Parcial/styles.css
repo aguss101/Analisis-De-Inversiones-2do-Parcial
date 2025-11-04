@@ -64,7 +64,7 @@ label, .aspLabel {
     border-radius: 8px;
     box-shadow: 0 0 2px #000;
 
-    min-width: 250px;
+    width: 250px;
 }
 
 .Bank__Container:hover{
@@ -85,6 +85,10 @@ label, .aspLabel {
     gap: 10px;
 }
 
+.Bank__TAP{
+    margin-top: 12px;
+}
+
 .Bank__Input-Container label{
     font-size: 0.8rem;
 }
@@ -96,7 +100,6 @@ label, .aspLabel {
 /* ======= Submits Section ======= */
 
 .Submits{
-    margin: 32px 0 0;
     text-align: center;
 }
 
@@ -141,4 +144,115 @@ input[type="submit"]:hover, button:hover, .aspButton:hover {
 span[style*="color:Red"], .error {
     color: #e74c3c !important;
     font-weight: bold;
+}
+
+.Errores{
+    text-align: center;
+    margin: 16px 0;
+}
+
+/*
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                        Resultados
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+/* ======= Result Section ======= */
+
+/* ---------- Estructura general ---------- */
+.Result__Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem;
+    font-family: "Segoe UI", Roboto, sans-serif;
+    color: #333;
+}
+
+/* ---------- Mejor inversión ---------- */
+.Result__Best {
+    width: 90%;
+    max-width: 800px;
+    background: linear-gradient(135deg, #4e73df, #1cc88a);
+    color: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    padding: 2rem;
+    text-align: center;
+}
+
+.Result__Best h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.Result__Bank-Container p {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+/* ---------- Rendimientos ---------- */
+.Performance {
+    width: 100%;
+    max-width: 1000px;
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.Performance h2 {
+    text-align: center;
+    font-size: 1.6rem;
+    color: #4e73df;
+    margin-bottom: 2rem;
+}
+
+/* ---------- Contenedores de cada banco ---------- */
+.Performance__Container {
+    margin-bottom: 2rem;
+    overflow-x: auto;
+    border: 1px solid #e3e6f0;
+    border-radius: 0.8rem;
+    background-color: #fafbff;
+}
+
+/* ---------- Tablas ---------- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 700px;
+}
+
+thead {
+    background-color: #4e73df;
+    color: white;
+}
+
+thead th:first-child{
+    width: 150px;
+}
+
+th, td {
+    text-align: center;
+    padding: 0.9rem 1rem;
+    border-bottom: 1px solid #dee2f7;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f1f3fa;
+}
+
+/* ---------- Etiquetas y spans ---------- */
+span {
+    font-weight: bold;
+    color: #1cc88a;
+}
+
+asp\:Label {
+    font-weight: 600;
+    color: #2e59d9;
 }
