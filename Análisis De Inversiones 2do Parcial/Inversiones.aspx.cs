@@ -17,6 +17,30 @@ namespace Análisis_De_Inversiones_2do_Parcial
             }
         }
 
+        protected void MobileTableFill()
+        {
+            // BANCO PROVINCIA
+            LBL__TAP1.Text = lblTAPS.Text;
+            LBL__AS1.Text = lblAS.Text;
+            LBL__TS1.Text = lblTS.Text;
+            LBL__MS1.Text = lblMS.Text;
+
+            // BANCO NACION
+
+            LBL__TAP2.Text = lblTAPS2.Text;
+            LBL__AS2.Text = lblAS2.Text;
+            LBL__TS2.Text = lblTS2.Text;
+            LBL__MS2.Text = lblMS2.Text;
+
+            // BANCO HIPOTECARIO
+
+            LBL__TAP3.Text = lblTAPS3.Text;
+            LBL__AS3.Text = lblAS3.Text;
+            LBL__TS3.Text = lblTS3.Text;
+            LBL__MS3.Text = lblMS3.Text;
+
+        }
+
         protected void btnTAP_Click(object sender, EventArgs e)
         {
             TAP_1.Visible = true;
@@ -25,6 +49,7 @@ namespace Análisis_De_Inversiones_2do_Parcial
 
             try
             {
+
                 double p1 = Convert.ToDouble(txtP1.Text);
                 double p2 = Convert.ToDouble(txtP2.Text);
                 double p3 = Convert.ToDouble(txtP3.Text);
@@ -54,6 +79,10 @@ namespace Análisis_De_Inversiones_2do_Parcial
                 lblAS.Text = "$" + rendAnualP.ToString("N0");
                 lblTS.Text = "$" + rendTrimestralP.ToString("N0");
                 lblMS.Text = "$" + rendMensualP.ToString("N0");
+
+                // RELLENAR TABLA MOBILE
+                MobileTableFill();
+
             }
             catch (FormatException)
             {

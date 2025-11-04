@@ -17,6 +17,10 @@ body {
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
+.Performance2{
+    display: none;
+}
+
 /* ======= Encabezados ======= */
 
 .Title__Container{
@@ -52,7 +56,10 @@ label, .aspLabel {
 .AllBank__Container{
     display: flex;
 
-    justify-content: space-around;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .Bank__Container{
@@ -64,7 +71,8 @@ label, .aspLabel {
     border-radius: 8px;
     box-shadow: 0 0 2px #000;
 
-    width: 250px;
+    flex-basis: 250px;
+    max-width: 250px;
 }
 
 .Bank__Container:hover{
@@ -224,7 +232,6 @@ span[style*="color:Red"], .error {
 table {
     width: 100%;
     border-collapse: collapse;
-    min-width: 700px;
 }
 
 thead {
@@ -255,4 +262,56 @@ span {
 asp\:Label {
     font-weight: 600;
     color: #2e59d9;
+}
+
+/*
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                    RESPONSIVE DESIGN
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+@media screen and (max-width: 922px) {
+    
+    .Performance{
+        display: none;
+    }
+
+    .Performance2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    th{
+        background-color: #4e73df;
+        color: white;
+        width: 30%;
+
+        min-width: 100px;
+    }
+
+    th, td{
+        padding: 0.3rem 0;
+    }
+
+    .Performance__Container{
+        align-self: stretch;
+    }
+
+}
+
+@media screen and ( max-width: 460px ) {
+    .Submits{
+        display: flex;
+        flex-direction: column;
+
+        gap: 16px;
+
+        align-items: center;
+    }
+
+    #btnTAP{
+        margin: 0;
+    }
+    
 }
