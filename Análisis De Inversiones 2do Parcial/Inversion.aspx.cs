@@ -38,6 +38,18 @@ namespace Análisis_De_Inversiones_2do_Parcial
                 double h3 = Convert.ToDouble(txtH3.Text);
                 double promH = (h1 + h2 + h3) / 3;
                 TAP_3.Text = promH.ToString("0.00") + " %";
+
+
+                double capital = 850000;
+
+                double rendAnualP = capital * (1 + promP / 100.0);
+                double rendTrimestralP = capital * Math.Pow((1 + (promP / 4.0) / 100.0), 4.0);
+                double rendMensualP = capital * Math.Pow((1 + (promP / 12.0) / 100.0), 12.0);
+
+                lblTAPS.Text = promP.ToString("0.00") + " %";
+                lblAS.Text = "$" + rendAnualP.ToString("N0");
+                lblTS.Text = "$" + rendTrimestralP.ToString("N0");
+                lblMS.Text = "$" + rendMensualP.ToString("N0");
             }
             catch (FormatException)
             {
