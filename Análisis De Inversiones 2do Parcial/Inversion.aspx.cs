@@ -12,9 +12,6 @@ namespace Análisis_De_Inversiones_2do_Parcial
                 ValidationSettings.UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
             }
         }
-        protected void txtP1_TextChanged(object sender, EventArgs e)
-        {
-        }
 
         protected void btnTAP_Click(object sender, EventArgs e)
         {
@@ -46,6 +43,19 @@ namespace Análisis_De_Inversiones_2do_Parcial
             {
                 Response.Write("<script>alert('Por favor, ingrese solo números válidos en todas las tasas.');</script>");
             }
+        }
+
+        protected void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtP1.Text = "";
+            txtP2.Text = "";
+            txtP3.Text = "";
+            txtN1.Text = "";
+            txtN2.Text = "";
+            txtN3.Text = "";
+            txtH1.Text = "";
+            txtH2.Text = "";
+            txtH3.Text = "";
         }
     }
 }
