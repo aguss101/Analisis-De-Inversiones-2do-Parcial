@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Inversion.aspx" />
+    <Content Include="Inversiones.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -77,6 +78,13 @@
     </Compile>
     <Compile Include="Inversion.aspx.designer.cs">
       <DependentUpon>Inversion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inversiones.aspx.cs">
+      <DependentUpon>Inversiones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inversiones.aspx.designer.cs">
+      <DependentUpon>Inversiones.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
