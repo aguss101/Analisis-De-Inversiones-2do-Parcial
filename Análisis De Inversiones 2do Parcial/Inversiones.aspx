@@ -303,7 +303,7 @@
 
                 <h2>Mejor Inversión</h2>
                 <div class="Result__Bank-Container">
-                    <p>Banco : <asp:Label ID="lblBco" runat="server" Text="lblBanco"></asp:Label> </p> 
+                    <p>Banco : <asp:Label ID="lblBco" runat="server"></asp:Label> </p> 
                     <p>Tasa Anual : <asp:Label ID="lblT_Anual" runat="server"></asp:Label> </p>
                     <p>Tasa Trimestral : <asp:Label ID="lblT_Trimestral" runat="server"></asp:Label> </p>
                     <p>Tasa Mensual : <asp:Label ID="lblT_Mensual" runat="server"></asp:Label> </p>

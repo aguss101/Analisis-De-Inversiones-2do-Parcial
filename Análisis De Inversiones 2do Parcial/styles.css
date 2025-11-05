@@ -264,6 +264,10 @@ asp\:Label {
     color: #2e59d9;
 }
 
+#lblBco, #lblT_Anual, #lblT_Trimestral, #lblT_Mensual{
+    color: #fff;
+}
+
 /*
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                     RESPONSIVE DESIGN
@@ -310,6 +314,11 @@ asp\:Label {
         padding: 0 !important; 
     }
 
+    .Performance{
+        box-shadow: none;
+        padding-bottom: 0;
+    }
+
 }
 
 @media screen and ( max-width: 460px ) {
@@ -331,6 +340,12 @@ asp\:Label {
 @media screen and ( max-width: 460px ) {
     body{
         padding: 0;
+    }
+}
+
+@media screen and ( max-width: 325px ) {
+    .Bank__Container{
+        box-shadow: none;
     }
 }
 

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -41,6 +42,69 @@ namespace Análisis_De_Inversiones_2do_Parcial
 
         }
 
+        // CALCULOS DE RENDIMIENTOS
+        
+        protected double RendAnual(double capital, double N)
+        {
+            return capital * (1 + N / 100.0);
+        }
+
+        protected double RendTrimestral(double capital, double N)
+        {
+            return capital * Math.Pow((1 + (N / 4.0) / 100.0), 4.0);
+        }
+
+        protected double RendMensual(double capital, double N)
+        {
+            return capital * Math.Pow((1 + (N / 12.0) / 100.0), 12.0);
+        }
+
+        // MEJOR INVERSIÓN
+
+        protected void MejorInversion(double PromP, double PromN, double PromH)
+        {
+
+            double MejorRendimiento = PromP > PromN ? PromP : PromN;
+            MejorRendimiento = MejorRendimiento > PromH ? MejorRendimiento : PromH;
+
+            // ASIGNAR BANCO
+
+            if (MejorRendimiento == PromP)
+            {
+                lblBco.Text = "Banco Provincia";
+            }
+            else if (MejorRendimiento == PromN)
+            {
+                lblBco.Text = "Banco Nación";
+            }
+            else
+            {
+                lblBco.Text = "Banco Hipotecario";
+            }
+
+            // ASIGNAR RENDIMIENTOS
+
+            if (lblBco.Text == "Banco Provincia")
+            {
+                lblT_Anual.Text = lblAS.Text;
+                lblT_Trimestral.Text = lblTS.Text;
+                lblT_Mensual.Text = lblMS.Text;
+            }
+            else if (lblBco.Text == "Banco Nación")
+            {
+                lblT_Anual.Text = lblAS2.Text;
+                lblT_Trimestral.Text = lblTS2.Text;
+                lblT_Mensual.Text = lblMS2.Text;
+            }
+            else
+            {
+                lblT_Anual.Text = lblAS3.Text;
+                lblT_Trimestral.Text = lblTS3.Text;
+                lblT_Mensual.Text = lblMS3.Text;
+            }
+
+        }
+
         protected void btnTAP_Click(object sender, EventArgs e)
         {
             TAP_1.Visible = true;
@@ -71,17 +135,30 @@ namespace Análisis_De_Inversiones_2do_Parcial
 
                 double capital = 850000;
 
-                double rendAnualP = capital * (1 + promP / 100.0);
-                double rendTrimestralP = capital * Math.Pow((1 + (promP / 4.0) / 100.0), 4.0);
-                double rendMensualP = capital * Math.Pow((1 + (promP / 12.0) / 100.0), 12.0);
+                // RELLENAR LABELS
 
                 lblTAPS.Text = promP.ToString("0.00") + " %";
-                lblAS.Text = "$" + rendAnualP.ToString("N0");
-                lblTS.Text = "$" + rendTrimestralP.ToString("N0");
-                lblMS.Text = "$" + rendMensualP.ToString("N0");
+                lblAS.Text = "$" + RendAnual(capital, promP).ToString("N0");
+                lblTS.Text = "$" + RendTrimestral(capital, promP).ToString("N0");
+                lblMS.Text = "$" + RendMensual(capital, promP).ToString("N0");
+
+                lblTAPS2.Text = promN.ToString("0.00") + " %";
+                lblAS2.Text = "$" + RendAnual(capital, promN).ToString("N0");
+                lblTS2.Text = "$" + RendTrimestral(capital, promN).ToString("N0");
+                lblMS2.Text = "$" + RendMensual(capital, promN).ToString("N0");
+
+                lblTAPS3.Text = promH.ToString("0.00") + " %";
+                lblAS3.Text = "$" + RendAnual(capital, promH).ToString("N0");
+                lblTS3.Text = "$" + RendTrimestral(capital, promH).ToString("N0");
+                lblMS3.Text = "$" + RendMensual(capital, promH).ToString("N0");
 
                 // RELLENAR TABLA MOBILE
+
                 MobileTableFill();
+
+                // MEJOR INVERSIÓN
+
+                MejorInversion(promP, promN, promH);
 
             }
             catch (FormatException)
@@ -110,6 +187,35 @@ namespace Análisis_De_Inversiones_2do_Parcial
             TAP_1.Text = "";
             TAP_2.Text = "";
             TAP_3.Text = "";
+
+            // TABLAS
+
+            lblTAPS.Text = "";
+            lblAS.Text = "";
+            lblTS.Text = "";
+            lblMS.Text = "";
+
+            lblTAPS2.Text = "";
+            lblAS2.Text = "";
+            lblTS2.Text = "";
+            lblMS2.Text = "";
+
+            lblTAPS3.Text = "";
+            lblAS3.Text = "";
+            lblTS3.Text = "";
+            lblMS3.Text = "";
+
+            // TABLAS MOBILE
+
+            MobileTableFill();
+
+            // MEJOR INVERSION
+
+            lblBco.Text = "";
+            lblT_Anual.Text = "";
+            lblT_Trimestral.Text = "";
+            lblT_Mensual.Text = "";
+
         }
     }
 }
