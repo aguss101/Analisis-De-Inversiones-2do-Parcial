@@ -132,15 +132,6 @@ namespace Análisis_De_Inversiones_2do_Parcial
         protected global::System.Web.UI.WebControls.Label TAP_3;
 
         /// <summary>
-        /// Control RFVtxt.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVtxt;
-
-        /// <summary>
         /// Control btnTAP.
         /// </summary>
         /// <remarks>

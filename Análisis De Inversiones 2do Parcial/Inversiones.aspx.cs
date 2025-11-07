@@ -111,6 +111,15 @@ namespace Análisis_De_Inversiones_2do_Parcial
             TAP_2.Visible = true;
             TAP_3.Visible = true;
 
+            // Validar que todos los campos estén completos
+            if (string.IsNullOrWhiteSpace(txtP1.Text) || string.IsNullOrWhiteSpace(txtP2.Text) || string.IsNullOrWhiteSpace(txtP3.Text) ||
+                string.IsNullOrWhiteSpace(txtN1.Text) || string.IsNullOrWhiteSpace(txtN2.Text) || string.IsNullOrWhiteSpace(txtN3.Text) ||
+                string.IsNullOrWhiteSpace(txtH1.Text) || string.IsNullOrWhiteSpace(txtH2.Text) || string.IsNullOrWhiteSpace(txtH3.Text))
+            {
+                ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Por favor, complete todos los campos antes de calcular.');", true);
+                return;
+            }
+
             try
             {
 

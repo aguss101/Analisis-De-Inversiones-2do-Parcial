@@ -78,7 +78,6 @@
         </div>
 
         <div class="Errores">
-            <asp:RequiredFieldValidator ID="RFVtxt" runat="server" ControlToValidate="txtH3" ErrorMessage="Ingrese todos los datos" ForeColor="Red" ValidationGroup="1"></asp:RequiredFieldValidator>
         </div>
 
         <div class="Submits">
