@@ -46,17 +46,34 @@ namespace Análisis_De_Inversiones_2do_Parcial
         
         protected double RendAnual(double capital, double N)
         {
-            return capital * (N/100);
+            return capital * (1 + (N/100));
         }
 
         protected double RendTrimestral(double capital, double N)
         {
-            return capital * (N/100);
+            //double tasaTrimestral = elevar(1 + (N/100),3) - 1;
+            //return capital * elevar(1+tasaTrimestral,4);
+            double ganancia = 0;
+            double res = capital;
+            for (int i = 0; i < 4; i++)
+            {
+                ganancia = res * (N / 100);
+                res += ganancia;
+            }
+            return res;
         }
 
         protected double RendMensual(double capital, double N)
         {
-            return capital * (N/100);
+            //double tasaMensual = elevar(1+(N/100),12);
+            //return capital * tasaMensual;
+            double ganancia = 0;
+            double res = capital; 
+            for (int i=0;i<12;i++) {
+                ganancia = res * (N / 100);
+                res += ganancia;
+            }
+            return res;
         }
 
         // MEJOR INVERSIÓN
@@ -153,13 +170,13 @@ namespace Análisis_De_Inversiones_2do_Parcial
 
                 lblTAPS2.Text = promN.ToString("0.00") + " %";
                 lblAS2.Text = "$" + RendAnual(capital, promN).ToString("N0");
-                lblTS2.Text = "$" + RendTrimestral(capital, (promN / 4)).ToString("N0");
-                lblMS2.Text = "$" + RendMensual(capital, (promN / 12)).ToString("N0");
+                lblTS2.Text = "$" + RendTrimestral(capital, (promN/4)).ToString("N0");
+                lblMS2.Text = "$" + RendMensual(capital, (promN/12)).ToString("N0");
 
                 lblTAPS3.Text = promH.ToString("0.00") + " %";
                 lblAS3.Text = "$" + RendAnual(capital, promH).ToString("N0");
-                lblTS3.Text = "$" + RendTrimestral(capital, (promH / 4)).ToString("N0");
-                lblMS3.Text = "$" + RendMensual(capital, (promH / 12)).ToString("N0");
+                lblTS3.Text = "$" + RendTrimestral(capital, (promH/4)).ToString("N0");
+                lblMS3.Text = "$" + RendMensual(capital, (promH/12)).ToString("N0");
 
                 // RELLENAR TABLA MOBILE
 
