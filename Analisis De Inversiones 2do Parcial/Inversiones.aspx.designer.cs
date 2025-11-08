@@ -24,6 +24,15 @@ namespace Análisis_De_Inversiones_2do_Parcial
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
+        /// Control txtCapital.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtCapital;
+
+        /// <summary>
         /// Control txtP1.
         /// </summary>
         /// <remarks>
@@ -159,6 +168,15 @@ namespace Análisis_De_Inversiones_2do_Parcial
         protected global::System.Web.UI.WebControls.Button btnLimpiar;
 
         /// <summary>
+        /// Control lblCapitalProv.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblCapitalProv;
+
+        /// <summary>
         /// Control lblTAPS.
         /// </summary>
         /// <remarks>
@@ -193,6 +211,15 @@ namespace Análisis_De_Inversiones_2do_Parcial
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblMS;
+
+        /// <summary>
+        /// Control lblCapitalNac.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblCapitalNac;
 
         /// <summary>
         /// Control lblTAPS2.
@@ -231,6 +258,15 @@ namespace Análisis_De_Inversiones_2do_Parcial
         protected global::System.Web.UI.WebControls.Label lblMS2;
 
         /// <summary>
+        /// Control lblCapitalHip.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblCapitalHip;
+
+        /// <summary>
         /// Control lblTAPS3.
         /// </summary>
         /// <remarks>
@@ -265,6 +301,15 @@ namespace Análisis_De_Inversiones_2do_Parcial
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblMS3;
+
+        /// <summary>
+        /// Control LBL__Capital1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LBL__Capital1;
 
         /// <summary>
         /// Control LBL__TAP1.
@@ -303,6 +348,15 @@ namespace Análisis_De_Inversiones_2do_Parcial
         protected global::System.Web.UI.WebControls.Label LBL__MS1;
 
         /// <summary>
+        /// Control LBL__Capital2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LBL__Capital2;
+
+        /// <summary>
         /// Control LBL__TAP2.
         /// </summary>
         /// <remarks>
@@ -337,6 +391,15 @@ namespace Análisis_De_Inversiones_2do_Parcial
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label LBL__MS2;
+
+        /// <summary>
+        /// Control LBL__Capital3.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LBL__Capital3;
 
         /// <summary>
         /// Control LBL__TAP3.

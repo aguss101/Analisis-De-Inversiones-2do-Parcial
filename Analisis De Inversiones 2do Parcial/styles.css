@@ -105,6 +105,15 @@ label, .aspLabel {
     display: block;
 }
 
+.Capital__Container {
+    display: flex;
+    align-items: center;
+
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 0 2px #000;
+}
+
 /* ======= Submits Section ======= */
 
 .Submits{
