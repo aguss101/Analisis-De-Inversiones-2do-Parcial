@@ -20,6 +20,11 @@ namespace Análisis_De_Inversiones_2do_Parcial
 
         protected void MobileTableFill()
         {
+            // CAPITAL
+            LBL__Capital1.Text = lblCapitalProv.Text;
+            LBL__Capital2.Text = lblCapitalNac.Text;
+            LBL__Capital3.Text = lblCapitalProv.Text;
+
             // BANCO PROVINCIA
             LBL__TAP1.Text = lblTAPS.Text;
             LBL__AS1.Text = lblAS.Text;
@@ -159,7 +164,12 @@ namespace Análisis_De_Inversiones_2do_Parcial
                 TAP_3.Text = promH.ToString("0.00") + " %";
 
 
-                double capital = 850000;
+                double capital = Convert.ToDouble(txtCapital.Text);
+
+                //CAPITAL
+                lblCapitalProv.Text = "$" + capital.ToString("N0");
+                lblCapitalNac.Text = "$" + capital.ToString("N0");
+                lblCapitalHip.Text = "$" + capital.ToString("N0");
 
                 // RELLENAR LABELS
 

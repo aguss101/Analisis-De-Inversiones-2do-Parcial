@@ -27,6 +27,13 @@
 
         <div class="AllBank__Container">
 
+            <div class="Capital__Container">
+                <h2 class="Bank__Title">Capital</h2>
+                <label>Ingrese capital:
+                    <asp:TextBox ID="txtCapital" runat="server" ValidationGroup="1" Class="Bank__Input-Modify"></asp:TextBox>
+                </label>
+            </div>
+
             <div class="Bank__Container">
                 <h2 class="Bank__Title">Banco Provincia</h2>
                 <div class="Bank__Input-Container">
@@ -113,7 +120,7 @@
                         <tbody>
                             <tr>
                                 <td></td>
-                                <td> <span>$850.000</span> </td>
+                                <td><asp:Label ID="lblCapitalProv" runat="server"></asp:Label></td>
                                 <td> <asp:Label ID="lblTAPS" runat="server"></asp:Label> </td>
                                 <td> <asp:Label ID="lblAS" runat="server"></asp:Label> </td>
                                 <td> <asp:Label ID="lblTS" runat="server"></asp:Label> </td>
@@ -142,7 +149,7 @@
                         <tbody>
                             <tr>
                                 <td></td>
-                                <td> <span>$850.000</span> </td>
+                                <td><asp:Label ID="lblCapitalNac" runat="server"></asp:Label></td>
                                 <td> <asp:Label ID="lblTAPS2" runat="server"></asp:Label> </td>
                                 <td> <asp:Label ID="lblAS2" runat="server"></asp:Label> </td>
                                 <td> <asp:Label ID="lblTS2" runat="server"></asp:Label> </td>
@@ -171,7 +178,7 @@
                         <tbody>
                             <tr>
                                 <td></td>
-                                <td> <span>$850.000</span> </td>
+                                <td><asp:Label ID="lblCapitalHip" runat="server"></asp:Label></td>
                                 <td> <asp:Label ID="lblTAPS3" runat="server"></asp:Label> </td>
                                 <td> <asp:Label ID="lblAS3" runat="server"></asp:Label> </td>
                                 <td> <asp:Label ID="lblTS3" runat="server"></asp:Label> </td>
@@ -202,7 +209,7 @@
                             </tr>
                             <tr>
                                 <th>Capital</th>
-                                <td> <span>$850.000</span> </td>
+                                <td> <asp:Label ID="LBL__Capital1" runat="server"> </asp:Label> </td>
                             </tr>
 
                             <tr>
@@ -238,7 +245,7 @@
                             </tr>
                             <tr>
                                 <th>Capital</th>
-                                <td> <span>$850.000</span> </td>
+                                <td> <asp:Label ID="LBL__Capital2" runat="server"> </asp:Label> </td>
                             </tr>
                             <tr>
                                 <th>TAP</th>
@@ -272,7 +279,7 @@
                             </tr>
                             <tr>
                                 <th>Capital</th>
-                                <td> <span>$850.000</span> </td>
+                                <td> <asp:Label ID="LBL__Capital3" runat="server"> </asp:Label> </td>
                             </tr>
                             <tr>
                                 <th>TAP</th>
