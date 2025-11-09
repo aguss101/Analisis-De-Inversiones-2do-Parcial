@@ -23,16 +23,20 @@
 
         <!-- ---------- Título END ---------- -->
 
+        <!-- ---------- Capital INPUT ---------- -->
+
+        <div class="Capital__Container">
+            <h2 class="Bank__Title Capital__Title">Capital</h2>
+            <label>Ingrese capital:
+                <asp:TextBox ID="txtCapital" runat="server" ValidationGroup="1" Class="Bank__Input-Modify"></asp:TextBox>
+            </label>
+        </div>
+
+        <!-- ---------- Capital END ---------- -->
+
         <!-- ---------- Invertir ---------- -->
 
         <div class="AllBank__Container">
-
-            <div class="Capital__Container">
-                <h2 class="Bank__Title">Capital</h2>
-                <label>Ingrese capital:
-                    <asp:TextBox ID="txtCapital" runat="server" ValidationGroup="1" Class="Bank__Input-Modify"></asp:TextBox>
-                </label>
-            </div>
 
             <div class="Bank__Container">
                 <h2 class="Bank__Title">Banco Provincia</h2>

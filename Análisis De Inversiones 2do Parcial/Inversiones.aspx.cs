@@ -241,6 +241,11 @@ namespace Análisis_De_Inversiones_2do_Parcial
             lblTS3.Text = "";
             lblMS3.Text = "";
 
+            txtCapital.Text = string.Empty;
+            lblCapitalProv.Text = string.Empty;
+            lblCapitalNac.Text = string.Empty;
+            lblCapitalHip.Text = string.Empty;
+
             // TABLAS MOBILE
 
             MobileTableFill();

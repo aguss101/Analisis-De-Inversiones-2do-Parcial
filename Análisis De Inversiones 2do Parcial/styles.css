@@ -228,6 +228,27 @@ span[style*="color:Red"], .error {
     background-color: #fafbff;
 }
 
+/* ---------- Capital ---------- */
+
+.Capital__Container{
+    display: flex;
+    justify-content: center;
+
+    gap: 12px;
+
+    margin-bottom: 24px;
+}
+
+.Capital__Title{
+    align-self: center;
+
+    margin: 0;
+}
+
+.Capital__Container label{
+    font-size: 0.7rem;
+}
+
 /* ---------- Tablas ---------- */
 table {
     width: 100%;
